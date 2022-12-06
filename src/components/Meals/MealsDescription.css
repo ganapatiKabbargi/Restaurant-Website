@@ -1,0 +1,30 @@
+.meal {
+  width: 800px;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque; */
+  border-bottom: 2px solid rgb(189, 183, 183);
+}
+
+.food-name {
+  color: rgb(47, 45, 45);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.food-description {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.food-price {
+  color: rgb(211, 58, 7);
+  font-size: 18px;
+  font-weight: bold;
+}
+

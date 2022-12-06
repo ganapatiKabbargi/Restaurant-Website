@@ -1,5 +1,6 @@
 import React from "react";
-import "./MealDescription.css";
+import MealInputForm from "./MealInputForm";
+import "./MealsDescription.css";
 
 const MealsDescription = (props) => {
   return (
@@ -9,15 +10,7 @@ const MealsDescription = (props) => {
         <div className="food-description">{props.description}</div>
         <div className="food-price">${props.price}</div>
       </div>
-      <div>
-        <div>
-          <span className="food-amount">Amount</span>
-          <input type="number" value="1" min="0" step="1" />
-        </div>
-        <div className="btn-div">
-          <button className="btn">+Add</button>
-        </div>
-      </div>
+      <MealInputForm id={props.id} />
     </li>
   );
 };
