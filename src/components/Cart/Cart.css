@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 30%;
+  width: 40%;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+}
+.modal h3 {
+  color: rgb(78, 74, 74);
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.details h2 {
+  font-size: 30px;
+}
+.details span {
+  font-weight: bold;
+  font-size: 30px;
+}
+.buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  display: inline-block;
+  background-color: #fff;
+  color: #b94517;
+  border-radius: 20px;
+  border: 2px solid #b94517;
+  margin: 0 10px;
+}
+
+.order-btn {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 24px;
+  display: inline-block;
+  background-color: #b94517;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0 10px;
+}
