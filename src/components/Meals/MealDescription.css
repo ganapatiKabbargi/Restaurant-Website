@@ -1,0 +1,58 @@
+.meal {
+  width: 800px;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque; */
+  border-bottom: 2px solid rgb(189, 183, 183);
+}
+
+.food-name {
+  color: rgb(47, 45, 45);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.food-description {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.food-price {
+  color: rgb(211, 58, 7);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.food-amount {
+  color: rgb(47, 45, 45);
+  margin: 0 10px;
+  font-weight: bold;
+}
+input {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: rgb(182, 174, 174);
+  font-weight: 600;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: #9d3c15;
+  padding: 8px 30px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #7e3010;
+}

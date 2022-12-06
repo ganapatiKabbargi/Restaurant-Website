@@ -1,0 +1,8 @@
+.avail-meal-items {
+  /* background-color: aquamarine; */
+  list-style-type: none;
+  padding: 30px 10px;
+  width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+}
