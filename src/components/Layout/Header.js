@@ -2,11 +2,14 @@ import React from "react";
 import CartButton from "./CartButton";
 import "./Header.css";
 const Header = (props) => {
+  const cartClickHandler = () => {
+    props.onCartClick();
+  };
   return (
     <React.Fragment>
       <header className="header">
         <h2>React Meals</h2>
-        <CartButton />
+        <CartButton onCartClick={cartClickHandler} />
       </header>
       <div className="img-div">
         <img

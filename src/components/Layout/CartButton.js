@@ -1,9 +1,12 @@
 import React from "react";
 import CartIcon from "../Cart/CartIcon";
 import "./CartButton.css";
-const CartButton = () => {
+const CartButton = (props) => {
+  const cartCLickHandler = () => {
+    props.onCartClick();
+  };
   return (
-    <button className="button">
+    <button className="button" onClick={cartCLickHandler}>
       <span className="icon">
         <CartIcon />
       </span>
