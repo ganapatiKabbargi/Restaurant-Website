@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "../UI/Modal/Modal";
+import CartContext from "../../store/cart-context";
+import CartItem from "./CartItem";
 import "./Cart.css";
 
 const Cart = (props) => {
@@ -10,12 +12,27 @@ const Cart = (props) => {
   const backdropHandler = () => {
     props.onClickBackdrop();
   };
+
+  const ctx = useContext(CartContext);
+  let total = 0;
+
+  const cartItems = ctx.items.map((item) => {
+    total = total + item.price * item.quantity;
+    return (
+      <CartItem
+        name={item.name}
+        price={item.price}
+        quantity={item.quantity}
+      ></CartItem>
+    );
+  });
+
   return (
     <Modal onConfirm={backdropHandler}>
-      <h3>Sushi</h3>
+      {cartItems}
       <div className="details">
         <span>Total Amount</span>
-        <span>35.62</span>
+        <span>${total}</span>
       </div>
       <div className="buttons">
         <button className="close-btn " onClick={onClickHandler}>

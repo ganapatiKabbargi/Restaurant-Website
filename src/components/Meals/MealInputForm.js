@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Input from "../UI/Input/Input";
+import CartContext from "../../store/cart-context";
 import "./MealInputForm.css";
 
 const MealInputForm = (props) => {
+  const cartCtx = useContext(CartContext);
+
+  const clickHandler = () => {
+    let quantity = document.getElementById("amount_" + props.id).value;
+
+    cartCtx.addItem({ ...props.item, quantity: +quantity });
+
+    console.log(cartCtx);
+  };
+
   return (
     <div>
       <Input
@@ -17,7 +28,9 @@ const MealInputForm = (props) => {
         }}
       />
       <div className="btn-div">
-        <button className="btn">+Add</button>
+        <button className="btn" onClick={clickHandler}>
+          +Add
+        </button>
       </div>
     </div>
   );

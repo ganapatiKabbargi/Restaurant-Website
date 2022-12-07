@@ -1,0 +1,28 @@
+.cart-item {
+  width: 400px;
+  /* background-color: beige; */
+  border-bottom: 2px solid grey;
+  padding: 10px;
+}
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(51, 49, 49);
+}
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b94517;
+}
+.pqdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.quantity {
+  border: 2px solid #b94517;
+  width: 30px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
